@@ -1,5 +1,5 @@
-# ChromaDB and LangChain Demo
-This repository contains code and resources for demonstrating the power of ChromaDB and LangChain for asking questions about your own data. 
+# Chroma and LangChain Demo
+This repository contains code and resources for demonstrating the power of Chroma and LangChain for asking questions about your own data. 
 The demo showcases how to pull data from the English Wikipedia using their API. The project also demonstrates how to vectorize data in chunks and get embeddings using OpenAI embeddings model.
 
 We then use [LangChain](https://github.com/hwchase17/langchain) to ask questions based on our data which is vectorized using OpenAI embeddings model. 
