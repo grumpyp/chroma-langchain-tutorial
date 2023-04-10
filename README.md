@@ -22,4 +22,4 @@ Now you can run `ask_wikipedia.py`.
 ## Video
 
 I also created a video to demonstrate the demo. 
-[![Screenshot](https://ibb.co/D7D0Vnn)](https://youtu.be/ytt4D5br6Fk)
+[![Screenshot](https://i.ibb.co/LCzVkff/embedding-vid.jpg)](https://youtu.be/ytt4D5br6Fk)
