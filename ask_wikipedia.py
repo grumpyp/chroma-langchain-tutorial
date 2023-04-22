@@ -2,7 +2,7 @@ from langchain.vectorstores import Chroma
 from langchain.embeddings import OpenAIEmbeddings
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.llms import OpenAI
-from langchain.chains import VectorDBQA
+from langchain.chains import RetrievalQA
 from langchain.document_loaders import TextLoader
 from typing import List
 from langchain.schema import Document
@@ -20,7 +20,7 @@ class Genie:
         self.documents = self.loader.load()
         self.texts = self.text_split(self.documents)
         self.vectordb = self.embeddings(self.texts)
-        self.genie = VectorDBQA.from_chain_type(llm=OpenAI(), chain_type="stuff", vectorstore=self.vectordb)
+        self.genie = RetrievalQA.from_chain_type(llm=OpenAI(), chain_type="stuff", retriever=self.vectordb.as_retriever())
 
     @staticmethod
     def text_split(documents: TextLoader):
